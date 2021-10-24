@@ -29,7 +29,7 @@ li {
 	margin: 2rem 1rem;
 }
 
-a, a:link, a:visited, a:hover, a:active {
+a, a:link, a:visited, a:hover {
 	color: #212121;
 	text-decoration: none;
 }
@@ -37,6 +37,11 @@ a, a:link, a:visited, a:hover, a:active {
 .btn {
 	border-radius: 100px;
 	background-color: #212121;
+}
+
+.btn:hover {
+	background-color: #525252;
+	border-color: #525252;
 }
 
 .login {
@@ -85,7 +90,7 @@ h1 {
 	align-items: center;
 }
 
-.learn-more {
+.register {
 	font-size: 1.8rem;
 	height: 94px;
 	width: 280px;
