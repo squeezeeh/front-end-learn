@@ -76,6 +76,7 @@ h1 {
 	text-align: center;
 	margin: 1rem 0 0 0;
 }
+
 .maincontent {
 	height: 65%;
 	display: flex;
@@ -89,8 +90,3 @@ h1 {
 	height: 94px;
 	width: 280px;
 }
-/* 
-font-family: 'Fredoka One', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Major Mono Display', monospace;
- */
