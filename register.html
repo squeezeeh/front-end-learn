@@ -15,16 +15,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <!-- Main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- CSS animations tool
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	/> 
-    -->
+    <link rel="stylesheet" type="text/css" href="register-styles.css">
     </head>
     <body>
-        
+        <div class="logo">
+            <img class="snowflake" src="snowflake.png" alt="Snowmen Logo">
+            <p class="logo-text">SNOWMEN</p>
+        </div>
+        <div class="registration-form div-center">
+            <h1 class="text-uppercase">Create personal account</h1>
+            <hr>
+            <form action="">
+                <span class="personal-information">
+                    <input class="first-name" name="f_name" type="text" placeholder="First Name" required="required">
+                    <input class="last-name" name="l_name" type="text" placeholder="Last Name" required="required">
+                    <input class="" type="number" size="4" name="age" min="1" max="120" placeholder="Age" required>
+                    <select name="gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input class="country" type="text" placeholder="Country" required>
+                    <input class="city" type="text" placeholder="City" required>
+                </span>
+                <span class="credentials">
+                    <input class="email" type="email" placeholder="Email" required>
+                    <input class="pass" type="password" placeholder="Password" required>
+                    <input class="confirm-pass" type="password" placeholder="Confirm Password" required>
+                    <button class="btn btn-dark text-uppercase text-center submit">submit</button>
+                </span>
+            </form>
+        </div>
     </body>
 </html>
