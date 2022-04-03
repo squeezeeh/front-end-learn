@@ -1,36 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <title>Welcome to Snowmen</title>
-
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="script" href="main.js" />
+    <title>rndm_frnt_prjct</title>
   </head>
   <body>
-	  <nav>
-		  <div class="logo">
-			  <img class="snowflake" src="snowflake.png" alt="Snowmen Logo">
-			  <p class="logo-text">SNOWMEN</p>
-		  </div>
-		  <ul class="text-uppercase">
-			  <li><a class="contacts" href="">contacts</a></li>
-			  <li><button class="btn btn-dark login">LOGIN</button></li>
-		  </ul>
-	  </nav>
-	  <div class="maincontent">
-	  	<h1 class="text-uppercase">Find a fellow traveler</h1>
-		<a href="register.html"><button class="btn btn-dark text-uppercase register">Register</button></a>
-	</div>
+    <p id="display-variables"></p>
+
+    <p id="display-gcd"></p>
+    <p id="display-coefs"></p>
+
+    <button class="run-btn" onclick="euclideanAlgorithms()">Run</button>
+
+    <script src="main.js"></script>
   </body>
 </html>
