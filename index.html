@@ -6,15 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="script" href="main.js" />
-    <title>rndm_frnt_prjct</title>
+    <title>Cryptology is cool :)</title>
   </head>
   <body>
+    <span id="input_section">
+      a =
+      <input type="number" min="-27" max="27" id="a" />(for Caesar cipher will be considered as KEY)<br>
+      b =
+      <input type="number" min="-27" max="27" id="b" /><br>
+      input = <br><textarea name="plainText" id="string" cols="30" rows="10"></textarea><br>
+      dictionary =
+      <input type="text" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ. " id="dictionary" />
+    <span>
+
     <p id="display-variables"></p>
 
     <p id="display-gcd"></p>
     <p id="display-coefs"></p>
+    <p id="display-inverse-element"></p>
+    
+    <p id="display-output1"></p>
+    <p id="display-output2"></p>
 
-    <button class="run-btn" onclick="euclideanAlgorithms()">Run</button>
+    Caesar output = <br><textarea name="" id="caesar_output" cols="30" rows="10"></textarea> <br>
+    Affine output = <br><textarea name="" id="affine_output" cols="30" rows="10"></textarea>
+
+    <br><button class="encode-btn" onclick="
+    euclideanAlgorithms(getVal()[0], getVal()[1]);
+    caesarCipher(getVal());
+    affineCipher(getVal());"
+    >encode</button>
+    
+    <button class="decode-btn" onclick="
+    decodeCaesar(getVal());
+    decodeAffine(euclideanAlgorithms(getVal()[0], getVal()[4]), getVal()[1], getVal()[2], getVal()[3]);"
+    >decode</button>
 
     <script src="main.js"></script>
   </body>

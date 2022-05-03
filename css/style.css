@@ -6,19 +6,22 @@
 
 body,
 html {
-  height: 100%;
+  height: 130%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: white;
   font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin: 1rem 0 0 0;
 }
 
 p {
-  margin: 0 0 5rem 0;
+  margin: 0 0 2rem 0;
 }
+
 #display-gcd {
   margin: 0 0 1rem 0;
 }
@@ -27,10 +30,12 @@ p {
   z-index: 1000;
 }
 
-.run-btn {
+.encode-btn,
+.decode-btn {
   background-color: white;
   color: rgb(41, 41, 41);
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
+  margin-top: 5px;
   border: 2px solid white;
   border-radius: 100px;
   font-family: "Courier New", Courier, monospace;
@@ -38,11 +43,57 @@ p {
   font-weight: 1000;
 }
 
-.run-btn:hover {
+.encode-btn:hover,
+.decode-btn:hover {
   background-color: rgb(41, 41, 41);
   color: white;
 }
 
-.run-btn:active {
+.encode-btn:active,
+.decode-btn:active {
   background-color: rgb(68, 68, 68);
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0 0 0 5px;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  padding: 2px 2px 0 5px;
+  width: 1.5rem;
+  -moz-appearance: textfield;
+}
+
+#string,
+#caesar_output,
+#affine_output {
+  width: 500px;
+  resize: both;
+}
+
+#dictionary {
+  padding: 2px 2px 0 5px;
+  margin-bottom: 30px;
+  width: 300px;
+}
+
+textarea {
+  padding: 5px;
+  height: 100px;
+  font-size: 12px;
 }
